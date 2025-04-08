@@ -45,9 +45,8 @@
 							<div class="row" style="padding:0">
 								<div class="col-md-4" id="on_screen_det_trigger_container-{{p.underscore}}"
 									style="text-align:center; padding:0; padding-top:0.3em">
-									{% with 'assets/characters/profile/'|add:p.underscore|add:'.png' as image_static %}
-									<img src="{% static image_static %}" style="width:46px; padding:0; ">
-									{% endwith %}
+									<img src="{% static 'assets/characters/profile/'|add:p.underscore|add:'.png' %}"
+										style="width:46px; padding:0; ">
 									<br>
 									{{ p.initial }}
 								</div>
@@ -76,9 +75,7 @@
 			style="background-color:#EEEEEE; padding:1em; padding-left:3.5em; padding-right:2em; border-radius:10px; display: none;">
 			<div class="media-left media-middle">
 				<a href="#">
-					{% with 'assets/characters/profile/'|add:p.underscore|add:'.png' as image_static %}
-					<img src="{% static image_static %}" style="width:5em">
-					{% endwith %}
+					<img src="{% static 'assets/characters/profile/'|add:p.underscore|add:'.png' %}" style="width:5em">
 				</a>
 			</div>
 			<div class="media-body" style='padding-left:3em; padding-top:0.5em; padding-bottom:1em'>

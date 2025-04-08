@@ -163,10 +163,8 @@
 			"{% static 'assets/characters/atlas.json' %}");
 
 		{% for p in persona_names %}
-		{% with 'assets/characters/' | add: p.underscore | add: '.png' as image_static %}
-		this.load.atlas("{{p.underscore}}", "{% static image_static %}",
+		this.load.atlas("{{p.underscore}}", "{% static 'assets/characters/'|add:p.underscore|add:'.png' %}",
 			"{% static 'assets/characters/atlas.json' %}");
-		{% endwith %}
 		{% endfor %}
 
 		this.load.image('speech_bubble', "{% static 'assets/speech_bubble/v3.png' %}");
