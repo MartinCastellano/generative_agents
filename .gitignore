@@ -100,3 +100,6 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+# Environment variables
+reverie/backend_server/.env

@@ -1,5 +1,3 @@
-
-
 # Generative Agents: Interactive Simulacra of Human Behavior 
 
 <p align="center" width="100%">
@@ -40,9 +38,11 @@ Install everything listed in the `requirements.txt` file (I strongly recommend f
 To run a new simulation, you will need to concurrently start two servers: the environment server and the agent simulation server.
 
 ### Step 1. Starting the Environment Server
-Again, the environment is implemented as a Django project, and as such, you will need to start the Django server. To do this, first navigate to `environment/frontend_server` (this is where `manage.py` is located) in your command line. Then run the following command:
+Again, the environment is implemented as a Django project, and as such, you will need to start the Django server. To do this, first navigate to `environment/frontend_server` (this is where `manage.py` is located) in your command line.
 
-    python manage.py runserver
+Then, run the server using Gunicorn. The `--reload` flag enables auto-reloading for development, so the server restarts automatically when you change the code:
+
+    gunicorn frontend_server.wsgi:application --reload --bind 0.0.0.0:8000 --workers 1 --log-level=debug
 
 Then, on your favorite browser, go to [http://localhost:8000/](http://localhost:8000/). If you see a message that says, "Your environment server is up and running," your server is running properly. Ensure that the environment server continues to run while you are running the simulation, so keep this command-line tab open! (Note: I recommend using either Chrome or Safari. Firefox might produce some frontend glitches, although it should not interfere with the actual simulation.)
 

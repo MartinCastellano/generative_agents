@@ -1,0 +1,2418 @@
+.
+├── api.http
+├── directoris.txt
+├── environment
+│   └── frontend_server
+│       ├── compressed_storage
+│       │   └── July1_the_ville_isabella_maria_klaus-step-3-20
+│       │       └── personas
+│       │           ├── Isabella Rodriguez
+│       │           │   └── bootstrap_memory
+│       │           │       └── associative_memory
+│       │           ├── Klaus Mueller
+│       │           │   └── bootstrap_memory
+│       │           │       └── associative_memory
+│       │           └── Maria Lopez
+│       │               └── bootstrap_memory
+│       │                   └── associative_memory
+│       ├── db.sqlite3
+│       ├── frontend_server
+│       │   ├── db.sqlite3
+│       │   ├── __init__.py
+│       │   ├── __pycache__
+│       │   │   ├── __init__.cpython-311.pyc
+│       │   │   ├── __init__.cpython-39.pyc
+│       │   │   ├── urls.cpython-311.pyc
+│       │   │   ├── urls.cpython-39.pyc
+│       │   │   ├── wsgi.cpython-311.pyc
+│       │   │   └── wsgi.cpython-39.pyc
+│       │   ├── settings
+│       │   │   ├── base.py
+│       │   │   ├── __init__.py
+│       │   │   ├── local.py
+│       │   │   └── __pycache__
+│       │   │       ├── base.cpython-311.pyc
+│       │   │       ├── base.cpython-39.pyc
+│       │   │       ├── __init__.cpython-311.pyc
+│       │   │       ├── __init__.cpython-39.pyc
+│       │   │       ├── local.cpython-311.pyc
+│       │   │       └── local.cpython-39.pyc
+│       │   ├── urls.py
+│       │   ├── utils.py
+│       │   └── wsgi.py
+│       ├── global_methods.py
+│       ├── manage.py
+│       ├── Procfile
+│       ├── __pycache__
+│       │   ├── global_methods.cpython-311.pyc
+│       │   └── global_methods.cpython-39.pyc
+│       ├── requirements.txt
+│       ├── runserver
+│       ├── runtime.txt
+│       ├── static_dirs
+│       │   ├── assets
+│       │   │   ├── characters
+│       │   │   │   ├── original
+│       │   │   │   └── profile
+│       │   │   ├── speech_bubble
+│       │   │   └── the_ville
+│       │   │       ├── agent_history_init_n25.csv
+│       │   │       ├── agent_history_init_n3.csv
+│       │   │       ├── matrix
+│       │   │       │   ├── maze
+│       │   │       │   │   ├── arena_maze.csv
+│       │   │       │   │   ├── collision_maze.csv
+│       │   │       │   │   ├── game_object_maze.csv
+│       │   │       │   │   ├── sector_maze.csv
+│       │   │       │   │   └── spawning_location_maze.csv
+│       │   │       │   └── special_blocks
+│       │   │       │       ├── arena_blocks.csv
+│       │   │       │       ├── game_object_blocks.csv
+│       │   │       │       ├── sector_blocks.csv
+│       │   │       │       ├── spawning_location_blocks.csv
+│       │   │       │       └── world_blocks.csv
+│       │   │       └── visuals
+│       │   │           ├── 300 random hex and decimal color codes - Entrylevelprogrammer.com.html
+│       │   │           ├── map_assets
+│       │   │           │   ├── blocks
+│       │   │           │   ├── cute_rpg_word_VXAce
+│       │   │           │   │   ├── characters
+│       │   │           │   │   ├── Read Me.txt
+│       │   │           │   │   ├── system
+│       │   │           │   │   ├── Thank You!.gif
+│       │   │           │   │   └── tilesets
+│       │   │           │   ├── Cute RPG World 40 usd packet
+│       │   │           │   │   ├── Cute RPG World
+│       │   │           │   │   │   ├── Cute RPG World
+│       │   │           │   │   │   │   ├── Animations
+│       │   │           │   │   │   │   ├── Characters
+│       │   │           │   │   │   │   ├── Enemies
+│       │   │           │   │   │   │   ├── Icons
+│       │   │           │   │   │   │   ├── Read Me.txt
+│       │   │           │   │   │   │   ├── Thank You!.gif
+│       │   │           │   │   │   │   └── Tilesets
+│       │   │           │   │   │   ├── Cute RPG World - RPG Maker MV
+│       │   │           │   │   │   │   ├── characters
+│       │   │           │   │   │   │   ├── Read Me.txt
+│       │   │           │   │   │   │   ├── system
+│       │   │           │   │   │   │   ├── Thank You!.gif
+│       │   │           │   │   │   │   └── tilesets
+│       │   │           │   │   │   ├── Cute RPG World - RPG Maker MZ
+│       │   │           │   │   │   │   ├── characters
+│       │   │           │   │   │   │   ├── Read Me.txt
+│       │   │           │   │   │   │   ├── system
+│       │   │           │   │   │   │   ├── Thank You!.gif
+│       │   │           │   │   │   │   └── tilesets
+│       │   │           │   │   │   ├── Cute RPG World - RPG Maker MZ 16x16
+│       │   │           │   │   │   │   ├── characters
+│       │   │           │   │   │   │   ├── Read Me.txt
+│       │   │           │   │   │   │   ├── system
+│       │   │           │   │   │   │   ├── Thank You!.gif
+│       │   │           │   │   │   │   └── tilesets
+│       │   │           │   │   │   └── Cute RPG World - RPG Maker VX Ace
+│       │   │           │   │   │       ├── characters
+│       │   │           │   │   │       ├── Read Me.txt
+│       │   │           │   │   │       ├── system
+│       │   │           │   │   │       ├── Thank You!.gif
+│       │   │           │   │   │       └── tilesets
+│       │   │           │   │   ├── Cute RPG World - RPG Maker MV
+│       │   │           │   │   │   ├── characters
+│       │   │           │   │   │   ├── Read Me.txt
+│       │   │           │   │   │   ├── system
+│       │   │           │   │   │   ├── Thank You!.gif
+│       │   │           │   │   │   └── tilesets
+│       │   │           │   │   ├── Cute RPG World - RPG Maker MV.zip
+│       │   │           │   │   ├── Cute RPG World - RPG Maker MZ
+│       │   │           │   │   │   ├── characters
+│       │   │           │   │   │   ├── Read Me.txt
+│       │   │           │   │   │   ├── system
+│       │   │           │   │   │   ├── Thank You!.gif
+│       │   │           │   │   │   └── tilesets
+│       │   │           │   │   ├── Cute RPG World - RPG Maker MZ (16x16).zip
+│       │   │           │   │   ├── Cute RPG World - RPG Maker MZ.zip
+│       │   │           │   │   ├── Cute RPG World - RPG Maker VX Ace
+│       │   │           │   │   │   ├── characters
+│       │   │           │   │   │   ├── Read Me.txt
+│       │   │           │   │   │   ├── system
+│       │   │           │   │   │   ├── Thank You!.gif
+│       │   │           │   │   │   └── tilesets
+│       │   │           │   │   ├── Cute RPG World - RPG Maker VX Ace.zip
+│       │   │           │   │   └── Cute RPG World.zip
+│       │   │           │   ├── v1
+│       │   │           │   ├── v2
+│       │   │           │   └── v3
+│       │   │           └── the_ville.tmx
+│       │   ├── css
+│       │   │   └── style.css
+│       │   └── img
+│       ├── storage
+│       │   ├── base_software_factory_mvp
+│       │   ├── base_the_ville_isabella_maria_klaus
+│       │   │   ├── environment
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── base_the_ville_n25
+│       │   │   ├── environment
+│       │   │   ├── personas
+│       │   │   │   ├── Abigail Chen
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Adam Smith
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Arthur Burton
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Ayesha Khan
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Carlos Gomez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Carmen Ortiz
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Eddy Lin
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Francisco Lopez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Giorgio Rossi
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Hailey Johnson
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Jane Moreno
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Jennifer Moore
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── John Lin
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Latoya Williams
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Maria Lopez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Mei Lin
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Rajiv Patel
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Ryan Park
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Sam Moore
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Tamara Taylor
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Tom Moreno
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Wolfgang Schulz
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Yuriko Yamamoto
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── July1_the_ville_isabella_maria_klaus-step-3-1
+│       │   │   ├── environment
+│       │   │   ├── movement
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── July1_the_ville_isabella_maria_klaus-step-3-10
+│       │   │   ├── environment
+│       │   │   ├── movement
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── July1_the_ville_isabella_maria_klaus-step-3-11
+│       │   │   ├── environment
+│       │   │   ├── movement
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── July1_the_ville_isabella_maria_klaus-step-3-12
+│       │   │   ├── environment
+│       │   │   ├── movement
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── July1_the_ville_isabella_maria_klaus-step-3-13
+│       │   │   ├── environment
+│       │   │   ├── movement
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── July1_the_ville_isabella_maria_klaus-step-3-14
+│       │   │   ├── environment
+│       │   │   ├── movement
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── July1_the_ville_isabella_maria_klaus-step-3-15
+│       │   │   ├── environment
+│       │   │   ├── movement
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── July1_the_ville_isabella_maria_klaus-step-3-16
+│       │   │   ├── environment
+│       │   │   ├── movement
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── July1_the_ville_isabella_maria_klaus-step-3-17
+│       │   │   ├── environment
+│       │   │   ├── movement
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── July1_the_ville_isabella_maria_klaus-step-3-18
+│       │   │   ├── environment
+│       │   │   ├── movement
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── July1_the_ville_isabella_maria_klaus-step-3-19
+│       │   │   ├── environment
+│       │   │   ├── movement
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── July1_the_ville_isabella_maria_klaus-step-3-2
+│       │   │   ├── environment
+│       │   │   ├── movement
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── July1_the_ville_isabella_maria_klaus-step-3-20
+│       │   │   ├── environment
+│       │   │   ├── movement
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── July1_the_ville_isabella_maria_klaus-step-3-21
+│       │   │   ├── environment
+│       │   │   ├── movement
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── July1_the_ville_isabella_maria_klaus-step-3-3
+│       │   │   ├── environment
+│       │   │   ├── movement
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── July1_the_ville_isabella_maria_klaus-step-3-4
+│       │   │   ├── environment
+│       │   │   ├── movement
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── July1_the_ville_isabella_maria_klaus-step-3-5
+│       │   │   ├── environment
+│       │   │   ├── movement
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── July1_the_ville_isabella_maria_klaus-step-3-6
+│       │   │   ├── environment
+│       │   │   ├── movement
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── July1_the_ville_isabella_maria_klaus-step-3-7
+│       │   │   ├── environment
+│       │   │   ├── movement
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── July1_the_ville_isabella_maria_klaus-step-3-8
+│       │   │   ├── environment
+│       │   │   ├── movement
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── July1_the_ville_isabella_maria_klaus-step-3-9
+│       │   │   ├── environment
+│       │   │   ├── movement
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── test
+│       │   │   ├── environment
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── test2
+│       │   │   ├── environment
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   └── test3
+│       │       ├── environment
+│       │       ├── personas
+│       │       │   ├── Isabella Rodriguez
+│       │       │   │   └── bootstrap_memory
+│       │       │   │       └── associative_memory
+│       │       │   ├── Klaus Mueller
+│       │       │   │   └── bootstrap_memory
+│       │       │   │       └── associative_memory
+│       │       │   └── Maria Lopez
+│       │       │       └── bootstrap_memory
+│       │       │           └── associative_memory
+│       │       └── reverie
+│       ├── templates
+│       │   ├── base.html
+│       │   ├── demo
+│       │   │   ├── demo.html
+│       │   │   └── main_script.html
+│       │   ├── home
+│       │   │   ├── error_start_backend.html
+│       │   │   ├── home.html
+│       │   │   ├── main_script.html
+│       │   │   └── main_script_old_dolores.html
+│       │   ├── landing
+│       │   │   └── landing.html
+│       │   ├── path_tester
+│       │   │   ├── main_script.html
+│       │   │   └── path_tester.html
+│       │   └── persona_state
+│       │       └── persona_state.html
+│       ├── temp_storage
+│       └── translator
+│           ├── admin.py
+│           ├── apps.py
+│           ├── __init__.py
+│           ├── migrations
+│           │   ├── 0001_initial.py
+│           │   ├── 0002_evaldata_target_agent.py
+│           │   ├── 0003_auto_20230327_0851.py
+│           │   ├── 0004_auto_20230330_0204.py
+│           │   ├── 0005_delete_evaldata.py
+│           │   └── __init__.py
+│           ├── models.py
+│           ├── __pycache__
+│           │   ├── admin.cpython-311.pyc
+│           │   ├── admin.cpython-39.pyc
+│           │   ├── apps.cpython-311.pyc
+│           │   ├── apps.cpython-39.pyc
+│           │   ├── __init__.cpython-311.pyc
+│           │   ├── __init__.cpython-39.pyc
+│           │   ├── models.cpython-311.pyc
+│           │   ├── models.cpython-39.pyc
+│           │   ├── views.cpython-311.pyc
+│           │   └── views.cpython-39.pyc
+│           ├── tests.py
+│           └── views.py
+├── generative_agents.pdf
+├── generative_agents_simulation.pdf
+├── LICENSE
+├── README.md
+├── requirements.txt
+└── reverie
+    ├── backend_server
+    │   ├── global_methods.py
+    │   ├── maze.py
+    │   ├── path_finder.py
+    │   ├── persona
+    │   │   ├── cognitive_modules
+    │   │   │   ├── converse.py
+    │   │   │   ├── execute.py
+    │   │   │   ├── perceive.py
+    │   │   │   ├── plan.py
+    │   │   │   ├── __pycache__
+    │   │   │   │   ├── converse.cpython-311.pyc
+    │   │   │   │   ├── converse.cpython-39.pyc
+    │   │   │   │   ├── execute.cpython-311.pyc
+    │   │   │   │   ├── execute.cpython-39.pyc
+    │   │   │   │   ├── perceive.cpython-311.pyc
+    │   │   │   │   ├── perceive.cpython-39.pyc
+    │   │   │   │   ├── plan.cpython-311.pyc
+    │   │   │   │   ├── plan.cpython-39.pyc
+    │   │   │   │   ├── reflect.cpython-311.pyc
+    │   │   │   │   ├── reflect.cpython-39.pyc
+    │   │   │   │   ├── retrieve.cpython-311.pyc
+    │   │   │   │   └── retrieve.cpython-39.pyc
+    │   │   │   ├── reflect.py
+    │   │   │   └── retrieve.py
+    │   │   ├── memory_structures
+    │   │   │   ├── associative_memory.py
+    │   │   │   ├── __pycache__
+    │   │   │   │   ├── associative_memory.cpython-311.pyc
+    │   │   │   │   ├── associative_memory.cpython-39.pyc
+    │   │   │   │   ├── scratch.cpython-311.pyc
+    │   │   │   │   ├── scratch.cpython-39.pyc
+    │   │   │   │   ├── spatial_memory.cpython-311.pyc
+    │   │   │   │   └── spatial_memory.cpython-39.pyc
+    │   │   │   ├── scratch.py
+    │   │   │   └── spatial_memory.py
+    │   │   ├── persona.py
+    │   │   ├── prompt_template
+    │   │   │   ├── defunct_run_gpt_prompt.py
+    │   │   │   ├── gpt_structure.py
+    │   │   │   ├── print_prompt.py
+    │   │   │   ├── __pycache__
+    │   │   │   │   ├── gpt_structure.cpython-311.pyc
+    │   │   │   │   ├── gpt_structure.cpython-39.pyc
+    │   │   │   │   ├── print_prompt.cpython-311.pyc
+    │   │   │   │   ├── print_prompt.cpython-39.pyc
+    │   │   │   │   ├── run_gpt_prompt.cpython-311.pyc
+    │   │   │   │   └── run_gpt_prompt.cpython-39.pyc
+    │   │   │   ├── run_gpt_prompt.py
+    │   │   │   ├── safety
+    │   │   │   │   └── anthromorphosization_v1.txt
+    │   │   │   ├── v1
+    │   │   │   │   ├── action_location_object_v1.txt
+    │   │   │   │   ├── action_location_object_vMar11.txt
+    │   │   │   │   ├── action_location_sector_v1.txt
+    │   │   │   │   ├── action_location_sector_v2.txt
+    │   │   │   │   ├── action_location_v1.txt
+    │   │   │   │   ├── action_location_v2.txt
+    │   │   │   │   ├── action_location_v3.txt
+    │   │   │   │   ├── action_object_v1.txt
+    │   │   │   │   ├── action_object_v2.txt
+    │   │   │   │   ├── action_sequencing_v1.txt
+    │   │   │   │   ├── action_sequencing_v2.txt
+    │   │   │   │   ├── daily_planning_v1.txt
+    │   │   │   │   ├── daily_planning_v2.txt
+    │   │   │   │   ├── daily_scheduling_v1.txt
+    │   │   │   │   ├── next_step_scheduling_init_v1.txt
+    │   │   │   │   ├── next_step_scheduling_v1_pt2.txt
+    │   │   │   │   ├── next_step_scheduling_v1.txt
+    │   │   │   │   └── test_prompt_July5.txt
+    │   │   │   ├── v2
+    │   │   │   │   ├── agent_chat_v1.txt
+    │   │   │   │   ├── bed_hour_v1.txt
+    │   │   │   │   ├── convo_to_thoughts_v1.txt
+    │   │   │   │   ├── create_conversation_v1.txt
+    │   │   │   │   ├── create_conversation_v2.txt
+    │   │   │   │   ├── daily_planning_v3.txt
+    │   │   │   │   ├── daily_planning_v4.txt
+    │   │   │   │   ├── daily_planning_v5.txt
+    │   │   │   │   ├── daily_planning_v6.txt
+    │   │   │   │   ├── decide_to_react_v1.txt
+    │   │   │   │   ├── decide_to_react_v2.txt
+    │   │   │   │   ├── decide_to_talk_v1.txt
+    │   │   │   │   ├── decide_to_talk_v2.txt
+    │   │   │   │   ├── generate_event_triple_v1.txt
+    │   │   │   │   ├── generate_focal_pt_v1.txt
+    │   │   │   │   ├── generate_hourly_schedule_v1.txt
+    │   │   │   │   ├── generate_hourly_schedule_v2.txt
+    │   │   │   │   ├── generate_next_convo_line_v1.txt
+    │   │   │   │   ├── generate_obj_event_v1.txt
+    │   │   │   │   ├── generate_pronunciatio_v1.txt
+    │   │   │   │   ├── get_keywords_v1.txt
+    │   │   │   │   ├── insight_and_evidence_v1.txt
+    │   │   │   │   ├── interpret_day_v1.txt
+    │   │   │   │   ├── keyword_to_thoughts_v1.txt
+    │   │   │   │   ├── memo_on_convo_v1.txt
+    │   │   │   │   ├── new_daily_plan_v1.txt
+    │   │   │   │   ├── new_decomp_schedule_v1.txt
+    │   │   │   │   ├── next_step_scheduling_v2.txt
+    │   │   │   │   ├── next_step_scheduling_v3.txt
+    │   │   │   │   ├── planning_thought_on_convo_v1.txt
+    │   │   │   │   ├── poignancy_chat_v1.txt
+    │   │   │   │   ├── poignancy_event_v1.txt
+    │   │   │   │   ├── poignancy_thought_v1.txt
+    │   │   │   │   ├── summarize_chat_ideas_v1.txt
+    │   │   │   │   ├── summarize_chat_relationship_v1.txt
+    │   │   │   │   ├── summarize_conversation_v1.txt
+    │   │   │   │   ├── summarize_day_v1.txt
+    │   │   │   │   ├── summarize_ideas_v1.txt
+    │   │   │   │   ├── task_decomp_v1.txt
+    │   │   │   │   ├── task_decomp_v2.txt
+    │   │   │   │   ├── task_decomp_v3.txt
+    │   │   │   │   ├── wake_up_hour_v1.txt
+    │   │   │   │   └── whisper_inner_thought_v1.txt
+    │   │   │   └── v3_ChatGPT
+    │   │   │       ├── action_location_object_v1.txt
+    │   │   │       ├── action_location_sector_v2.txt
+    │   │   │       ├── action_object_v2.txt
+    │   │   │       ├── agent_chat_v1.txt
+    │   │   │       ├── bed_hour_v1.txt
+    │   │   │       ├── convo_to_thoughts_v1.txt
+    │   │   │       ├── create_conversation_v1.txt
+    │   │   │       ├── create_conversation_v2.txt
+    │   │   │       ├── daily_planning_v3.txt
+    │   │   │       ├── daily_planning_v4.txt
+    │   │   │       ├── daily_planning_v5.txt
+    │   │   │       ├── daily_planning_v6.txt
+    │   │   │       ├── decide_to_react_v1.txt
+    │   │   │       ├── decide_to_react_v2.txt
+    │   │   │       ├── decide_to_talk_v1.txt
+    │   │   │       ├── decide_to_talk_v2.txt
+    │   │   │       ├── generate_event_triple_v1.txt
+    │   │   │       ├── generate_focal_pt_v1.txt
+    │   │   │       ├── generate_hourly_schedule_v1.txt
+    │   │   │       ├── generate_hourly_schedule_v2.txt
+    │   │   │       ├── generate_next_convo_line_v1.txt
+    │   │   │       ├── generate_obj_event_v1.txt
+    │   │   │       ├── generate_pronunciatio_v1.txt
+    │   │   │       ├── get_keywords_v1.txt
+    │   │   │       ├── insight_and_evidence_v1.txt
+    │   │   │       ├── interpret_day_v1.txt
+    │   │   │       ├── iterative_convo_v1.txt
+    │   │   │       ├── keyword_to_thoughts_v1.txt
+    │   │   │       ├── memo_on_convo_v1.txt
+    │   │   │       ├── new_daily_plan_v1.txt
+    │   │   │       ├── new_decomp_schedule_v1.txt
+    │   │   │       ├── next_step_scheduling_v2.txt
+    │   │   │       ├── next_step_scheduling_v3.txt
+    │   │   │       ├── planning_thought_on_convo_v1.txt
+    │   │   │       ├── poignancy_chat_v1.txt
+    │   │   │       ├── poignancy_event_v1.txt
+    │   │   │       ├── poignancy_thought_v1.txt
+    │   │   │       ├── summarize_chat_ideas_v1.txt
+    │   │   │       ├── summarize_chat_relationship_v1.txt
+    │   │   │       ├── summarize_chat_relationship_v2.txt
+    │   │   │       ├── summarize_conversation_v1.txt
+    │   │   │       ├── summarize_day_v1.txt
+    │   │   │       ├── summarize_ideas_v1.txt
+    │   │   │       ├── task_decomp_v1.txt
+    │   │   │       ├── task_decomp_v2.txt
+    │   │   │       ├── task_decomp_v3.txt
+    │   │   │       ├── wake_up_hour_v1.txt
+    │   │   │       └── whisper_inner_thought_v1.txt
+    │   │   └── __pycache__
+    │   │       ├── persona.cpython-311.pyc
+    │   │       └── persona.cpython-39.pyc
+    │   ├── __pycache__
+    │   │   ├── global_methods.cpython-311.pyc
+    │   │   ├── global_methods.cpython-39.pyc
+    │   │   ├── maze.cpython-311.pyc
+    │   │   ├── maze.cpython-39.pyc
+    │   │   ├── path_finder.cpython-311.pyc
+    │   │   ├── path_finder.cpython-39.pyc
+    │   │   ├── utils.cpython-311.pyc
+    │   │   └── utils.cpython-39.pyc
+    │   ├── reverie.py
+    │   ├── test copy.py
+    │   ├── test.py
+    │   └── utils.py
+    ├── compress_sim_storage.py
+    └── global_methods.py
+
+529 directories, 274 files
+.
+├── api.http
+├── directoris.txt
+├── environment
+│   └── frontend_server
+│       ├── compressed_storage
+│       │   └── July1_the_ville_isabella_maria_klaus-step-3-20
+│       │       └── personas
+│       │           ├── Isabella Rodriguez
+│       │           │   └── bootstrap_memory
+│       │           │       └── associative_memory
+│       │           ├── Klaus Mueller
+│       │           │   └── bootstrap_memory
+│       │           │       └── associative_memory
+│       │           └── Maria Lopez
+│       │               └── bootstrap_memory
+│       │                   └── associative_memory
+│       ├── db.sqlite3
+│       ├── frontend_server
+│       │   ├── db.sqlite3
+│       │   ├── __init__.py
+│       │   ├── __pycache__
+│       │   │   ├── __init__.cpython-311.pyc
+│       │   │   ├── __init__.cpython-39.pyc
+│       │   │   ├── urls.cpython-311.pyc
+│       │   │   ├── urls.cpython-39.pyc
+│       │   │   ├── wsgi.cpython-311.pyc
+│       │   │   └── wsgi.cpython-39.pyc
+│       │   ├── settings
+│       │   │   ├── base.py
+│       │   │   ├── __init__.py
+│       │   │   ├── local.py
+│       │   │   └── __pycache__
+│       │   │       ├── base.cpython-311.pyc
+│       │   │       ├── base.cpython-39.pyc
+│       │   │       ├── __init__.cpython-311.pyc
+│       │   │       ├── __init__.cpython-39.pyc
+│       │   │       ├── local.cpython-311.pyc
+│       │   │       └── local.cpython-39.pyc
+│       │   ├── urls.py
+│       │   ├── utils.py
+│       │   └── wsgi.py
+│       ├── global_methods.py
+│       ├── manage.py
+│       ├── Procfile
+│       ├── __pycache__
+│       │   ├── global_methods.cpython-311.pyc
+│       │   └── global_methods.cpython-39.pyc
+│       ├── requirements.txt
+│       ├── runserver
+│       ├── runtime.txt
+│       ├── static_dirs
+│       │   ├── assets
+│       │   │   ├── characters
+│       │   │   │   ├── original
+│       │   │   │   └── profile
+│       │   │   ├── speech_bubble
+│       │   │   └── the_ville
+│       │   │       ├── agent_history_init_n25.csv
+│       │   │       ├── agent_history_init_n3.csv
+│       │   │       ├── matrix
+│       │   │       │   ├── maze
+│       │   │       │   │   ├── arena_maze.csv
+│       │   │       │   │   ├── collision_maze.csv
+│       │   │       │   │   ├── game_object_maze.csv
+│       │   │       │   │   ├── sector_maze.csv
+│       │   │       │   │   └── spawning_location_maze.csv
+│       │   │       │   └── special_blocks
+│       │   │       │       ├── arena_blocks.csv
+│       │   │       │       ├── game_object_blocks.csv
+│       │   │       │       ├── sector_blocks.csv
+│       │   │       │       ├── spawning_location_blocks.csv
+│       │   │       │       └── world_blocks.csv
+│       │   │       └── visuals
+│       │   │           ├── 300 random hex and decimal color codes - Entrylevelprogrammer.com.html
+│       │   │           ├── map_assets
+│       │   │           │   ├── blocks
+│       │   │           │   ├── cute_rpg_word_VXAce
+│       │   │           │   │   ├── characters
+│       │   │           │   │   ├── Read Me.txt
+│       │   │           │   │   ├── system
+│       │   │           │   │   ├── Thank You!.gif
+│       │   │           │   │   └── tilesets
+│       │   │           │   ├── Cute RPG World 40 usd packet
+│       │   │           │   │   ├── Cute RPG World
+│       │   │           │   │   │   ├── Cute RPG World
+│       │   │           │   │   │   │   ├── Animations
+│       │   │           │   │   │   │   ├── Characters
+│       │   │           │   │   │   │   ├── Enemies
+│       │   │           │   │   │   │   ├── Icons
+│       │   │           │   │   │   │   ├── Read Me.txt
+│       │   │           │   │   │   │   ├── Thank You!.gif
+│       │   │           │   │   │   │   └── Tilesets
+│       │   │           │   │   │   ├── Cute RPG World - RPG Maker MV
+│       │   │           │   │   │   │   ├── characters
+│       │   │           │   │   │   │   ├── Read Me.txt
+│       │   │           │   │   │   │   ├── system
+│       │   │           │   │   │   │   ├── Thank You!.gif
+│       │   │           │   │   │   │   └── tilesets
+│       │   │           │   │   │   ├── Cute RPG World - RPG Maker MZ
+│       │   │           │   │   │   │   ├── characters
+│       │   │           │   │   │   │   ├── Read Me.txt
+│       │   │           │   │   │   │   ├── system
+│       │   │           │   │   │   │   ├── Thank You!.gif
+│       │   │           │   │   │   │   └── tilesets
+│       │   │           │   │   │   ├── Cute RPG World - RPG Maker MZ 16x16
+│       │   │           │   │   │   │   ├── characters
+│       │   │           │   │   │   │   ├── Read Me.txt
+│       │   │           │   │   │   │   ├── system
+│       │   │           │   │   │   │   ├── Thank You!.gif
+│       │   │           │   │   │   │   └── tilesets
+│       │   │           │   │   │   └── Cute RPG World - RPG Maker VX Ace
+│       │   │           │   │   │       ├── characters
+│       │   │           │   │   │       ├── Read Me.txt
+│       │   │           │   │   │       ├── system
+│       │   │           │   │   │       ├── Thank You!.gif
+│       │   │           │   │   │       └── tilesets
+│       │   │           │   │   ├── Cute RPG World - RPG Maker MV
+│       │   │           │   │   │   ├── characters
+│       │   │           │   │   │   ├── Read Me.txt
+│       │   │           │   │   │   ├── system
+│       │   │           │   │   │   ├── Thank You!.gif
+│       │   │           │   │   │   └── tilesets
+│       │   │           │   │   ├── Cute RPG World - RPG Maker MV.zip
+│       │   │           │   │   ├── Cute RPG World - RPG Maker MZ
+│       │   │           │   │   │   ├── characters
+│       │   │           │   │   │   ├── Read Me.txt
+│       │   │           │   │   │   ├── system
+│       │   │           │   │   │   ├── Thank You!.gif
+│       │   │           │   │   │   └── tilesets
+│       │   │           │   │   ├── Cute RPG World - RPG Maker MZ (16x16).zip
+│       │   │           │   │   ├── Cute RPG World - RPG Maker MZ.zip
+│       │   │           │   │   ├── Cute RPG World - RPG Maker VX Ace
+│       │   │           │   │   │   ├── characters
+│       │   │           │   │   │   ├── Read Me.txt
+│       │   │           │   │   │   ├── system
+│       │   │           │   │   │   ├── Thank You!.gif
+│       │   │           │   │   │   └── tilesets
+│       │   │           │   │   ├── Cute RPG World - RPG Maker VX Ace.zip
+│       │   │           │   │   └── Cute RPG World.zip
+│       │   │           │   ├── v1
+│       │   │           │   ├── v2
+│       │   │           │   └── v3
+│       │   │           └── the_ville.tmx
+│       │   ├── css
+│       │   │   └── style.css
+│       │   └── img
+│       ├── storage
+│       │   ├── base_software_factory_mvp
+│       │   ├── base_the_ville_isabella_maria_klaus
+│       │   │   ├── environment
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── base_the_ville_n25
+│       │   │   ├── environment
+│       │   │   ├── personas
+│       │   │   │   ├── Abigail Chen
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Adam Smith
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Arthur Burton
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Ayesha Khan
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Carlos Gomez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Carmen Ortiz
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Eddy Lin
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Francisco Lopez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Giorgio Rossi
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Hailey Johnson
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Jane Moreno
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Jennifer Moore
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── John Lin
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Latoya Williams
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Maria Lopez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Mei Lin
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Rajiv Patel
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Ryan Park
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Sam Moore
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Tamara Taylor
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Tom Moreno
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Wolfgang Schulz
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Yuriko Yamamoto
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── July1_the_ville_isabella_maria_klaus-step-3-1
+│       │   │   ├── environment
+│       │   │   ├── movement
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── July1_the_ville_isabella_maria_klaus-step-3-10
+│       │   │   ├── environment
+│       │   │   ├── movement
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── July1_the_ville_isabella_maria_klaus-step-3-11
+│       │   │   ├── environment
+│       │   │   ├── movement
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── July1_the_ville_isabella_maria_klaus-step-3-12
+│       │   │   ├── environment
+│       │   │   ├── movement
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── July1_the_ville_isabella_maria_klaus-step-3-13
+│       │   │   ├── environment
+│       │   │   ├── movement
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── July1_the_ville_isabella_maria_klaus-step-3-14
+│       │   │   ├── environment
+│       │   │   ├── movement
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── July1_the_ville_isabella_maria_klaus-step-3-15
+│       │   │   ├── environment
+│       │   │   ├── movement
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── July1_the_ville_isabella_maria_klaus-step-3-16
+│       │   │   ├── environment
+│       │   │   ├── movement
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── July1_the_ville_isabella_maria_klaus-step-3-17
+│       │   │   ├── environment
+│       │   │   ├── movement
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── July1_the_ville_isabella_maria_klaus-step-3-18
+│       │   │   ├── environment
+│       │   │   ├── movement
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── July1_the_ville_isabella_maria_klaus-step-3-19
+│       │   │   ├── environment
+│       │   │   ├── movement
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── July1_the_ville_isabella_maria_klaus-step-3-2
+│       │   │   ├── environment
+│       │   │   ├── movement
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── July1_the_ville_isabella_maria_klaus-step-3-20
+│       │   │   ├── environment
+│       │   │   ├── movement
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── July1_the_ville_isabella_maria_klaus-step-3-21
+│       │   │   ├── environment
+│       │   │   ├── movement
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── July1_the_ville_isabella_maria_klaus-step-3-3
+│       │   │   ├── environment
+│       │   │   ├── movement
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── July1_the_ville_isabella_maria_klaus-step-3-4
+│       │   │   ├── environment
+│       │   │   ├── movement
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── July1_the_ville_isabella_maria_klaus-step-3-5
+│       │   │   ├── environment
+│       │   │   ├── movement
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── July1_the_ville_isabella_maria_klaus-step-3-6
+│       │   │   ├── environment
+│       │   │   ├── movement
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── July1_the_ville_isabella_maria_klaus-step-3-7
+│       │   │   ├── environment
+│       │   │   ├── movement
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── July1_the_ville_isabella_maria_klaus-step-3-8
+│       │   │   ├── environment
+│       │   │   ├── movement
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── July1_the_ville_isabella_maria_klaus-step-3-9
+│       │   │   ├── environment
+│       │   │   ├── movement
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── test
+│       │   │   ├── environment
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── test2
+│       │   │   ├── environment
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   └── test3
+│       │       ├── environment
+│       │       ├── personas
+│       │       │   ├── Isabella Rodriguez
+│       │       │   │   └── bootstrap_memory
+│       │       │   │       └── associative_memory
+│       │       │   ├── Klaus Mueller
+│       │       │   │   └── bootstrap_memory
+│       │       │   │       └── associative_memory
+│       │       │   └── Maria Lopez
+│       │       │       └── bootstrap_memory
+│       │       │           └── associative_memory
+│       │       └── reverie
+│       ├── templates
+│       │   ├── base.html
+│       │   ├── demo
+│       │   │   ├── demo.html
+│       │   │   └── main_script.html
+│       │   ├── home
+│       │   │   ├── error_start_backend.html
+│       │   │   ├── home.html
+│       │   │   ├── main_script.html
+│       │   │   └── main_script_old_dolores.html
+│       │   ├── landing
+│       │   │   └── landing.html
+│       │   ├── path_tester
+│       │   │   ├── main_script.html
+│       │   │   └── path_tester.html
+│       │   └── persona_state
+│       │       └── persona_state.html
+│       ├── temp_storage
+│       └── translator
+│           ├── admin.py
+│           ├── apps.py
+│           ├── __init__.py
+│           ├── migrations
+│           │   ├── 0001_initial.py
+│           │   ├── 0002_evaldata_target_agent.py
+│           │   ├── 0003_auto_20230327_0851.py
+│           │   ├── 0004_auto_20230330_0204.py
+│           │   ├── 0005_delete_evaldata.py
+│           │   └── __init__.py
+│           ├── models.py
+│           ├── __pycache__
+│           │   ├── admin.cpython-311.pyc
+│           │   ├── admin.cpython-39.pyc
+│           │   ├── apps.cpython-311.pyc
+│           │   ├── apps.cpython-39.pyc
+│           │   ├── __init__.cpython-311.pyc
+│           │   ├── __init__.cpython-39.pyc
+│           │   ├── models.cpython-311.pyc
+│           │   ├── models.cpython-39.pyc
+│           │   ├── views.cpython-311.pyc
+│           │   └── views.cpython-39.pyc
+│           ├── tests.py
+│           └── views.py
+├── generative_agents.pdf
+├── generative_agents_simulation.pdf
+├── LICENSE
+├── README.md
+├── requirements.txt
+└── reverie
+    ├── backend_server
+    │   ├── global_methods.py
+    │   ├── maze.py
+    │   ├── path_finder.py
+    │   ├── persona
+    │   │   ├── cognitive_modules
+    │   │   │   ├── converse.py
+    │   │   │   ├── execute.py
+    │   │   │   ├── perceive.py
+    │   │   │   ├── plan.py
+    │   │   │   ├── __pycache__
+    │   │   │   │   ├── converse.cpython-311.pyc
+    │   │   │   │   ├── converse.cpython-39.pyc
+    │   │   │   │   ├── execute.cpython-311.pyc
+    │   │   │   │   ├── execute.cpython-39.pyc
+    │   │   │   │   ├── perceive.cpython-311.pyc
+    │   │   │   │   ├── perceive.cpython-39.pyc
+    │   │   │   │   ├── plan.cpython-311.pyc
+    │   │   │   │   ├── plan.cpython-39.pyc
+    │   │   │   │   ├── reflect.cpython-311.pyc
+    │   │   │   │   ├── reflect.cpython-39.pyc
+    │   │   │   │   ├── retrieve.cpython-311.pyc
+    │   │   │   │   └── retrieve.cpython-39.pyc
+    │   │   │   ├── reflect.py
+    │   │   │   └── retrieve.py
+    │   │   ├── memory_structures
+    │   │   │   ├── associative_memory.py
+    │   │   │   ├── __pycache__
+    │   │   │   │   ├── associative_memory.cpython-311.pyc
+    │   │   │   │   ├── associative_memory.cpython-39.pyc
+    │   │   │   │   ├── scratch.cpython-311.pyc
+    │   │   │   │   ├── scratch.cpython-39.pyc
+    │   │   │   │   ├── spatial_memory.cpython-311.pyc
+    │   │   │   │   └── spatial_memory.cpython-39.pyc
+    │   │   │   ├── scratch.py
+    │   │   │   └── spatial_memory.py
+    │   │   ├── persona.py
+    │   │   ├── prompt_template
+    │   │   │   ├── defunct_run_gpt_prompt.py
+    │   │   │   ├── gpt_structure.py
+    │   │   │   ├── print_prompt.py
+    │   │   │   ├── __pycache__
+    │   │   │   │   ├── gpt_structure.cpython-311.pyc
+    │   │   │   │   ├── gpt_structure.cpython-39.pyc
+    │   │   │   │   ├── print_prompt.cpython-311.pyc
+    │   │   │   │   ├── print_prompt.cpython-39.pyc
+    │   │   │   │   ├── run_gpt_prompt.cpython-311.pyc
+    │   │   │   │   └── run_gpt_prompt.cpython-39.pyc
+    │   │   │   ├── run_gpt_prompt.py
+    │   │   │   ├── safety
+    │   │   │   │   └── anthromorphosization_v1.txt
+    │   │   │   ├── v1
+    │   │   │   │   ├── action_location_object_v1.txt
+    │   │   │   │   ├── action_location_object_vMar11.txt
+    │   │   │   │   ├── action_location_sector_v1.txt
+    │   │   │   │   ├── action_location_sector_v2.txt
+    │   │   │   │   ├── action_location_v1.txt
+    │   │   │   │   ├── action_location_v2.txt
+    │   │   │   │   ├── action_location_v3.txt
+    │   │   │   │   ├── action_object_v1.txt
+    │   │   │   │   ├── action_object_v2.txt
+    │   │   │   │   ├── action_sequencing_v1.txt
+    │   │   │   │   ├── action_sequencing_v2.txt
+    │   │   │   │   ├── daily_planning_v1.txt
+    │   │   │   │   ├── daily_planning_v2.txt
+    │   │   │   │   ├── daily_scheduling_v1.txt
+    │   │   │   │   ├── next_step_scheduling_init_v1.txt
+    │   │   │   │   ├── next_step_scheduling_v1_pt2.txt
+    │   │   │   │   ├── next_step_scheduling_v1.txt
+    │   │   │   │   └── test_prompt_July5.txt
+    │   │   │   ├── v2
+    │   │   │   │   ├── agent_chat_v1.txt
+    │   │   │   │   ├── bed_hour_v1.txt
+    │   │   │   │   ├── convo_to_thoughts_v1.txt
+    │   │   │   │   ├── create_conversation_v1.txt
+    │   │   │   │   ├── create_conversation_v2.txt
+    │   │   │   │   ├── daily_planning_v3.txt
+    │   │   │   │   ├── daily_planning_v4.txt
+    │   │   │   │   ├── daily_planning_v5.txt
+    │   │   │   │   ├── daily_planning_v6.txt
+    │   │   │   │   ├── decide_to_react_v1.txt
+    │   │   │   │   ├── decide_to_react_v2.txt
+    │   │   │   │   ├── decide_to_talk_v1.txt
+    │   │   │   │   ├── decide_to_talk_v2.txt
+    │   │   │   │   ├── generate_event_triple_v1.txt
+    │   │   │   │   ├── generate_focal_pt_v1.txt
+    │   │   │   │   ├── generate_hourly_schedule_v1.txt
+    │   │   │   │   ├── generate_hourly_schedule_v2.txt
+    │   │   │   │   ├── generate_next_convo_line_v1.txt
+    │   │   │   │   ├── generate_obj_event_v1.txt
+    │   │   │   │   ├── generate_pronunciatio_v1.txt
+    │   │   │   │   ├── get_keywords_v1.txt
+    │   │   │   │   ├── insight_and_evidence_v1.txt
+    │   │   │   │   ├── interpret_day_v1.txt
+    │   │   │   │   ├── keyword_to_thoughts_v1.txt
+    │   │   │   │   ├── memo_on_convo_v1.txt
+    │   │   │   │   ├── new_daily_plan_v1.txt
+    │   │   │   │   ├── new_decomp_schedule_v1.txt
+    │   │   │   │   ├── next_step_scheduling_v2.txt
+    │   │   │   │   ├── next_step_scheduling_v3.txt
+    │   │   │   │   ├── planning_thought_on_convo_v1.txt
+    │   │   │   │   ├── poignancy_chat_v1.txt
+    │   │   │   │   ├── poignancy_event_v1.txt
+    │   │   │   │   ├── poignancy_thought_v1.txt
+    │   │   │   │   ├── summarize_chat_ideas_v1.txt
+    │   │   │   │   ├── summarize_chat_relationship_v1.txt
+    │   │   │   │   ├── summarize_conversation_v1.txt
+    │   │   │   │   ├── summarize_day_v1.txt
+    │   │   │   │   ├── summarize_ideas_v1.txt
+    │   │   │   │   ├── task_decomp_v1.txt
+    │   │   │   │   ├── task_decomp_v2.txt
+    │   │   │   │   ├── task_decomp_v3.txt
+    │   │   │   │   ├── wake_up_hour_v1.txt
+    │   │   │   │   └── whisper_inner_thought_v1.txt
+    │   │   │   └── v3_ChatGPT
+    │   │   │       ├── action_location_object_v1.txt
+    │   │   │       ├── action_location_sector_v2.txt
+    │   │   │       ├── action_object_v2.txt
+    │   │   │       ├── agent_chat_v1.txt
+    │   │   │       ├── bed_hour_v1.txt
+    │   │   │       ├── convo_to_thoughts_v1.txt
+    │   │   │       ├── create_conversation_v1.txt
+    │   │   │       ├── create_conversation_v2.txt
+    │   │   │       ├── daily_planning_v3.txt
+    │   │   │       ├── daily_planning_v4.txt
+    │   │   │       ├── daily_planning_v5.txt
+    │   │   │       ├── daily_planning_v6.txt
+    │   │   │       ├── decide_to_react_v1.txt
+    │   │   │       ├── decide_to_react_v2.txt
+    │   │   │       ├── decide_to_talk_v1.txt
+    │   │   │       ├── decide_to_talk_v2.txt
+    │   │   │       ├── generate_event_triple_v1.txt
+    │   │   │       ├── generate_focal_pt_v1.txt
+    │   │   │       ├── generate_hourly_schedule_v1.txt
+    │   │   │       ├── generate_hourly_schedule_v2.txt
+    │   │   │       ├── generate_next_convo_line_v1.txt
+    │   │   │       ├── generate_obj_event_v1.txt
+    │   │   │       ├── generate_pronunciatio_v1.txt
+    │   │   │       ├── get_keywords_v1.txt
+    │   │   │       ├── insight_and_evidence_v1.txt
+    │   │   │       ├── interpret_day_v1.txt
+    │   │   │       ├── iterative_convo_v1.txt
+    │   │   │       ├── keyword_to_thoughts_v1.txt
+    │   │   │       ├── memo_on_convo_v1.txt
+    │   │   │       ├── new_daily_plan_v1.txt
+    │   │   │       ├── new_decomp_schedule_v1.txt
+    │   │   │       ├── next_step_scheduling_v2.txt
+    │   │   │       ├── next_step_scheduling_v3.txt
+    │   │   │       ├── planning_thought_on_convo_v1.txt
+    │   │   │       ├── poignancy_chat_v1.txt
+    │   │   │       ├── poignancy_event_v1.txt
+    │   │   │       ├── poignancy_thought_v1.txt
+    │   │   │       ├── summarize_chat_ideas_v1.txt
+    │   │   │       ├── summarize_chat_relationship_v1.txt
+    │   │   │       ├── summarize_chat_relationship_v2.txt
+    │   │   │       ├── summarize_conversation_v1.txt
+    │   │   │       ├── summarize_day_v1.txt
+    │   │   │       ├── summarize_ideas_v1.txt
+    │   │   │       ├── task_decomp_v1.txt
+    │   │   │       ├── task_decomp_v2.txt
+    │   │   │       ├── task_decomp_v3.txt
+    │   │   │       ├── wake_up_hour_v1.txt
+    │   │   │       └── whisper_inner_thought_v1.txt
+    │   │   └── __pycache__
+    │   │       ├── persona.cpython-311.pyc
+    │   │       └── persona.cpython-39.pyc
+    │   ├── __pycache__
+    │   │   ├── global_methods.cpython-311.pyc
+    │   │   ├── global_methods.cpython-39.pyc
+    │   │   ├── maze.cpython-311.pyc
+    │   │   ├── maze.cpython-39.pyc
+    │   │   ├── path_finder.cpython-311.pyc
+    │   │   ├── path_finder.cpython-39.pyc
+    │   │   ├── utils.cpython-311.pyc
+    │   │   └── utils.cpython-39.pyc
+    │   ├── reverie.py
+    │   ├── test copy.py
+    │   ├── test.py
+    │   └── utils.py
+    ├── compress_sim_storage.py
+    └── global_methods.py
+
+529 directories, 274 files
+.
+├── api.http
+├── directoris.txt
+├── environment
+│   └── frontend_server
+│       ├── compressed_storage
+│       │   └── July1_the_ville_isabella_maria_klaus-step-3-20
+│       │       └── personas
+│       │           ├── Isabella Rodriguez
+│       │           │   └── bootstrap_memory
+│       │           │       └── associative_memory
+│       │           ├── Klaus Mueller
+│       │           │   └── bootstrap_memory
+│       │           │       └── associative_memory
+│       │           └── Maria Lopez
+│       │               └── bootstrap_memory
+│       │                   └── associative_memory
+│       ├── db.sqlite3
+│       ├── frontend_server
+│       │   ├── db.sqlite3
+│       │   ├── __init__.py
+│       │   ├── __pycache__
+│       │   │   ├── __init__.cpython-311.pyc
+│       │   │   ├── __init__.cpython-39.pyc
+│       │   │   ├── urls.cpython-311.pyc
+│       │   │   ├── urls.cpython-39.pyc
+│       │   │   ├── wsgi.cpython-311.pyc
+│       │   │   └── wsgi.cpython-39.pyc
+│       │   ├── settings
+│       │   │   ├── base.py
+│       │   │   ├── __init__.py
+│       │   │   ├── local.py
+│       │   │   └── __pycache__
+│       │   │       ├── base.cpython-311.pyc
+│       │   │       ├── base.cpython-39.pyc
+│       │   │       ├── __init__.cpython-311.pyc
+│       │   │       ├── __init__.cpython-39.pyc
+│       │   │       ├── local.cpython-311.pyc
+│       │   │       └── local.cpython-39.pyc
+│       │   ├── urls.py
+│       │   ├── utils.py
+│       │   └── wsgi.py
+│       ├── global_methods.py
+│       ├── manage.py
+│       ├── Procfile
+│       ├── __pycache__
+│       │   ├── global_methods.cpython-311.pyc
+│       │   └── global_methods.cpython-39.pyc
+│       ├── requirements.txt
+│       ├── runserver
+│       ├── runtime.txt
+│       ├── static_dirs
+│       │   ├── assets
+│       │   │   ├── characters
+│       │   │   │   ├── original
+│       │   │   │   └── profile
+│       │   │   ├── speech_bubble
+│       │   │   └── the_ville
+│       │   │       ├── agent_history_init_n25.csv
+│       │   │       ├── agent_history_init_n3.csv
+│       │   │       ├── matrix
+│       │   │       │   ├── maze
+│       │   │       │   │   ├── arena_maze.csv
+│       │   │       │   │   ├── collision_maze.csv
+│       │   │       │   │   ├── game_object_maze.csv
+│       │   │       │   │   ├── sector_maze.csv
+│       │   │       │   │   └── spawning_location_maze.csv
+│       │   │       │   └── special_blocks
+│       │   │       │       ├── arena_blocks.csv
+│       │   │       │       ├── game_object_blocks.csv
+│       │   │       │       ├── sector_blocks.csv
+│       │   │       │       ├── spawning_location_blocks.csv
+│       │   │       │       └── world_blocks.csv
+│       │   │       └── visuals
+│       │   │           ├── 300 random hex and decimal color codes - Entrylevelprogrammer.com.html
+│       │   │           ├── map_assets
+│       │   │           │   ├── blocks
+│       │   │           │   ├── cute_rpg_word_VXAce
+│       │   │           │   │   ├── characters
+│       │   │           │   │   ├── Read Me.txt
+│       │   │           │   │   ├── system
+│       │   │           │   │   ├── Thank You!.gif
+│       │   │           │   │   └── tilesets
+│       │   │           │   ├── Cute RPG World 40 usd packet
+│       │   │           │   │   ├── Cute RPG World
+│       │   │           │   │   │   ├── Cute RPG World
+│       │   │           │   │   │   │   ├── Animations
+│       │   │           │   │   │   │   ├── Characters
+│       │   │           │   │   │   │   ├── Enemies
+│       │   │           │   │   │   │   ├── Icons
+│       │   │           │   │   │   │   ├── Read Me.txt
+│       │   │           │   │   │   │   ├── Thank You!.gif
+│       │   │           │   │   │   │   └── Tilesets
+│       │   │           │   │   │   ├── Cute RPG World - RPG Maker MV
+│       │   │           │   │   │   │   ├── characters
+│       │   │           │   │   │   │   ├── Read Me.txt
+│       │   │           │   │   │   │   ├── system
+│       │   │           │   │   │   │   ├── Thank You!.gif
+│       │   │           │   │   │   │   └── tilesets
+│       │   │           │   │   │   ├── Cute RPG World - RPG Maker MZ
+│       │   │           │   │   │   │   ├── characters
+│       │   │           │   │   │   │   ├── Read Me.txt
+│       │   │           │   │   │   │   ├── system
+│       │   │           │   │   │   │   ├── Thank You!.gif
+│       │   │           │   │   │   │   └── tilesets
+│       │   │           │   │   │   ├── Cute RPG World - RPG Maker MZ 16x16
+│       │   │           │   │   │   │   ├── characters
+│       │   │           │   │   │   │   ├── Read Me.txt
+│       │   │           │   │   │   │   ├── system
+│       │   │           │   │   │   │   ├── Thank You!.gif
+│       │   │           │   │   │   │   └── tilesets
+│       │   │           │   │   │   └── Cute RPG World - RPG Maker VX Ace
+│       │   │           │   │   │       ├── characters
+│       │   │           │   │   │       ├── Read Me.txt
+│       │   │           │   │   │       ├── system
+│       │   │           │   │   │       ├── Thank You!.gif
+│       │   │           │   │   │       └── tilesets
+│       │   │           │   │   ├── Cute RPG World - RPG Maker MV
+│       │   │           │   │   │   ├── characters
+│       │   │           │   │   │   ├── Read Me.txt
+│       │   │           │   │   │   ├── system
+│       │   │           │   │   │   ├── Thank You!.gif
+│       │   │           │   │   │   └── tilesets
+│       │   │           │   │   ├── Cute RPG World - RPG Maker MV.zip
+│       │   │           │   │   ├── Cute RPG World - RPG Maker MZ
+│       │   │           │   │   │   ├── characters
+│       │   │           │   │   │   ├── Read Me.txt
+│       │   │           │   │   │   ├── system
+│       │   │           │   │   │   ├── Thank You!.gif
+│       │   │           │   │   │   └── tilesets
+│       │   │           │   │   ├── Cute RPG World - RPG Maker MZ (16x16).zip
+│       │   │           │   │   ├── Cute RPG World - RPG Maker MZ.zip
+│       │   │           │   │   ├── Cute RPG World - RPG Maker VX Ace
+│       │   │           │   │   │   ├── characters
+│       │   │           │   │   │   ├── Read Me.txt
+│       │   │           │   │   │   ├── system
+│       │   │           │   │   │   ├── Thank You!.gif
+│       │   │           │   │   │   └── tilesets
+│       │   │           │   │   ├── Cute RPG World - RPG Maker VX Ace.zip
+│       │   │           │   │   └── Cute RPG World.zip
+│       │   │           │   ├── v1
+│       │   │           │   ├── v2
+│       │   │           │   └── v3
+│       │   │           └── the_ville.tmx
+│       │   ├── css
+│       │   │   └── style.css
+│       │   └── img
+│       ├── storage
+│       │   ├── base_software_factory_mvp
+│       │   ├── base_the_ville_isabella_maria_klaus
+│       │   │   ├── environment
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── base_the_ville_n25
+│       │   │   ├── environment
+│       │   │   ├── personas
+│       │   │   │   ├── Abigail Chen
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Adam Smith
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Arthur Burton
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Ayesha Khan
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Carlos Gomez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Carmen Ortiz
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Eddy Lin
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Francisco Lopez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Giorgio Rossi
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Hailey Johnson
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Jane Moreno
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Jennifer Moore
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── John Lin
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Latoya Williams
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Maria Lopez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Mei Lin
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Rajiv Patel
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Ryan Park
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Sam Moore
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Tamara Taylor
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Tom Moreno
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Wolfgang Schulz
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Yuriko Yamamoto
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── July1_the_ville_isabella_maria_klaus-step-3-1
+│       │   │   ├── environment
+│       │   │   ├── movement
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── July1_the_ville_isabella_maria_klaus-step-3-10
+│       │   │   ├── environment
+│       │   │   ├── movement
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── July1_the_ville_isabella_maria_klaus-step-3-11
+│       │   │   ├── environment
+│       │   │   ├── movement
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── July1_the_ville_isabella_maria_klaus-step-3-12
+│       │   │   ├── environment
+│       │   │   ├── movement
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── July1_the_ville_isabella_maria_klaus-step-3-13
+│       │   │   ├── environment
+│       │   │   ├── movement
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── July1_the_ville_isabella_maria_klaus-step-3-14
+│       │   │   ├── environment
+│       │   │   ├── movement
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── July1_the_ville_isabella_maria_klaus-step-3-15
+│       │   │   ├── environment
+│       │   │   ├── movement
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── July1_the_ville_isabella_maria_klaus-step-3-16
+│       │   │   ├── environment
+│       │   │   ├── movement
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── July1_the_ville_isabella_maria_klaus-step-3-17
+│       │   │   ├── environment
+│       │   │   ├── movement
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── July1_the_ville_isabella_maria_klaus-step-3-18
+│       │   │   ├── environment
+│       │   │   ├── movement
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── July1_the_ville_isabella_maria_klaus-step-3-19
+│       │   │   ├── environment
+│       │   │   ├── movement
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── July1_the_ville_isabella_maria_klaus-step-3-2
+│       │   │   ├── environment
+│       │   │   ├── movement
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── July1_the_ville_isabella_maria_klaus-step-3-20
+│       │   │   ├── environment
+│       │   │   ├── movement
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── July1_the_ville_isabella_maria_klaus-step-3-21
+│       │   │   ├── environment
+│       │   │   ├── movement
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── July1_the_ville_isabella_maria_klaus-step-3-3
+│       │   │   ├── environment
+│       │   │   ├── movement
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── July1_the_ville_isabella_maria_klaus-step-3-4
+│       │   │   ├── environment
+│       │   │   ├── movement
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── July1_the_ville_isabella_maria_klaus-step-3-5
+│       │   │   ├── environment
+│       │   │   ├── movement
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── July1_the_ville_isabella_maria_klaus-step-3-6
+│       │   │   ├── environment
+│       │   │   ├── movement
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── July1_the_ville_isabella_maria_klaus-step-3-7
+│       │   │   ├── environment
+│       │   │   ├── movement
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── July1_the_ville_isabella_maria_klaus-step-3-8
+│       │   │   ├── environment
+│       │   │   ├── movement
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── July1_the_ville_isabella_maria_klaus-step-3-9
+│       │   │   ├── environment
+│       │   │   ├── movement
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── test
+│       │   │   ├── environment
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   ├── test2
+│       │   │   ├── environment
+│       │   │   ├── personas
+│       │   │   │   ├── Isabella Rodriguez
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   ├── Klaus Mueller
+│       │   │   │   │   └── bootstrap_memory
+│       │   │   │   │       └── associative_memory
+│       │   │   │   └── Maria Lopez
+│       │   │   │       └── bootstrap_memory
+│       │   │   │           └── associative_memory
+│       │   │   └── reverie
+│       │   └── test3
+│       │       ├── environment
+│       │       ├── personas
+│       │       │   ├── Isabella Rodriguez
+│       │       │   │   └── bootstrap_memory
+│       │       │   │       └── associative_memory
+│       │       │   ├── Klaus Mueller
+│       │       │   │   └── bootstrap_memory
+│       │       │   │       └── associative_memory
+│       │       │   └── Maria Lopez
+│       │       │       └── bootstrap_memory
+│       │       │           └── associative_memory
+│       │       └── reverie
+│       ├── templates
+│       │   ├── base.html
+│       │   ├── demo
+│       │   │   ├── demo.html
+│       │   │   └── main_script.html
+│       │   ├── home
+│       │   │   ├── error_start_backend.html
+│       │   │   ├── home.html
+│       │   │   ├── main_script.html
+│       │   │   └── main_script_old_dolores.html
+│       │   ├── landing
+│       │   │   └── landing.html
+│       │   ├── path_tester
+│       │   │   ├── main_script.html
+│       │   │   └── path_tester.html
+│       │   └── persona_state
+│       │       └── persona_state.html
+│       ├── temp_storage
+│       └── translator
+│           ├── admin.py
+│           ├── apps.py
+│           ├── __init__.py
+│           ├── migrations
+│           │   ├── 0001_initial.py
+│           │   ├── 0002_evaldata_target_agent.py
+│           │   ├── 0003_auto_20230327_0851.py
+│           │   ├── 0004_auto_20230330_0204.py
+│           │   ├── 0005_delete_evaldata.py
+│           │   └── __init__.py
+│           ├── models.py
+│           ├── __pycache__
+│           │   ├── admin.cpython-311.pyc
+│           │   ├── admin.cpython-39.pyc
+│           │   ├── apps.cpython-311.pyc
+│           │   ├── apps.cpython-39.pyc
+│           │   ├── __init__.cpython-311.pyc
+│           │   ├── __init__.cpython-39.pyc
+│           │   ├── models.cpython-311.pyc
+│           │   ├── models.cpython-39.pyc
+│           │   ├── views.cpython-311.pyc
+│           │   └── views.cpython-39.pyc
+│           ├── tests.py
+│           └── views.py
+├── generative_agents.pdf
+├── generative_agents_simulation.pdf
+├── LICENSE
+├── README.md
+├── requirements.txt
+└── reverie
+    ├── backend_server
+    │   ├── global_methods.py
+    │   ├── maze.py
+    │   ├── path_finder.py
+    │   ├── persona
+    │   │   ├── cognitive_modules
+    │   │   │   ├── converse.py
+    │   │   │   ├── execute.py
+    │   │   │   ├── perceive.py
+    │   │   │   ├── plan.py
+    │   │   │   ├── __pycache__
+    │   │   │   │   ├── converse.cpython-311.pyc
+    │   │   │   │   ├── converse.cpython-39.pyc
+    │   │   │   │   ├── execute.cpython-311.pyc
+    │   │   │   │   ├── execute.cpython-39.pyc
+    │   │   │   │   ├── perceive.cpython-311.pyc
+    │   │   │   │   ├── perceive.cpython-39.pyc
+    │   │   │   │   ├── plan.cpython-311.pyc
+    │   │   │   │   ├── plan.cpython-39.pyc
+    │   │   │   │   ├── reflect.cpython-311.pyc
+    │   │   │   │   ├── reflect.cpython-39.pyc
+    │   │   │   │   ├── retrieve.cpython-311.pyc
+    │   │   │   │   └── retrieve.cpython-39.pyc
+    │   │   │   ├── reflect.py
+    │   │   │   └── retrieve.py
+    │   │   ├── memory_structures
+    │   │   │   ├── associative_memory.py
+    │   │   │   ├── __pycache__
+    │   │   │   │   ├── associative_memory.cpython-311.pyc
+    │   │   │   │   ├── associative_memory.cpython-39.pyc
+    │   │   │   │   ├── scratch.cpython-311.pyc
+    │   │   │   │   ├── scratch.cpython-39.pyc
+    │   │   │   │   ├── spatial_memory.cpython-311.pyc
+    │   │   │   │   └── spatial_memory.cpython-39.pyc
+    │   │   │   ├── scratch.py
+    │   │   │   └── spatial_memory.py
+    │   │   ├── persona.py
+    │   │   ├── prompt_template
+    │   │   │   ├── defunct_run_gpt_prompt.py
+    │   │   │   ├── gpt_structure.py
+    │   │   │   ├── print_prompt.py
+    │   │   │   ├── __pycache__
+    │   │   │   │   ├── gpt_structure.cpython-311.pyc
+    │   │   │   │   ├── gpt_structure.cpython-39.pyc
+    │   │   │   │   ├── print_prompt.cpython-311.pyc
+    │   │   │   │   ├── print_prompt.cpython-39.pyc
+    │   │   │   │   ├── run_gpt_prompt.cpython-311.pyc
+    │   │   │   │   └── run_gpt_prompt.cpython-39.pyc
+    │   │   │   ├── run_gpt_prompt.py
+    │   │   │   ├── safety
+    │   │   │   │   └── anthromorphosization_v1.txt
+    │   │   │   ├── v1
+    │   │   │   │   ├── action_location_object_v1.txt
+    │   │   │   │   ├── action_location_object_vMar11.txt
+    │   │   │   │   ├── action_location_sector_v1.txt
+    │   │   │   │   ├── action_location_sector_v2.txt
+    │   │   │   │   ├── action_location_v1.txt
+    │   │   │   │   ├── action_location_v2.txt
+    │   │   │   │   ├── action_location_v3.txt
+    │   │   │   │   ├── action_object_v1.txt
+    │   │   │   │   ├── action_object_v2.txt
+    │   │   │   │   ├── action_sequencing_v1.txt
+    │   │   │   │   ├── action_sequencing_v2.txt
+    │   │   │   │   ├── daily_planning_v1.txt
+    │   │   │   │   ├── daily_planning_v2.txt
+    │   │   │   │   ├── daily_scheduling_v1.txt
+    │   │   │   │   ├── next_step_scheduling_init_v1.txt
+    │   │   │   │   ├── next_step_scheduling_v1_pt2.txt
+    │   │   │   │   ├── next_step_scheduling_v1.txt
+    │   │   │   │   └── test_prompt_July5.txt
+    │   │   │   ├── v2
+    │   │   │   │   ├── agent_chat_v1.txt
+    │   │   │   │   ├── bed_hour_v1.txt
+    │   │   │   │   ├── convo_to_thoughts_v1.txt
+    │   │   │   │   ├── create_conversation_v1.txt
+    │   │   │   │   ├── create_conversation_v2.txt
+    │   │   │   │   ├── daily_planning_v3.txt
+    │   │   │   │   ├── daily_planning_v4.txt
+    │   │   │   │   ├── daily_planning_v5.txt
+    │   │   │   │   ├── daily_planning_v6.txt
+    │   │   │   │   ├── decide_to_react_v1.txt
+    │   │   │   │   ├── decide_to_react_v2.txt
+    │   │   │   │   ├── decide_to_talk_v1.txt
+    │   │   │   │   ├── decide_to_talk_v2.txt
+    │   │   │   │   ├── generate_event_triple_v1.txt
+    │   │   │   │   ├── generate_focal_pt_v1.txt
+    │   │   │   │   ├── generate_hourly_schedule_v1.txt
+    │   │   │   │   ├── generate_hourly_schedule_v2.txt
+    │   │   │   │   ├── generate_next_convo_line_v1.txt
+    │   │   │   │   ├── generate_obj_event_v1.txt
+    │   │   │   │   ├── generate_pronunciatio_v1.txt
+    │   │   │   │   ├── get_keywords_v1.txt
+    │   │   │   │   ├── insight_and_evidence_v1.txt
+    │   │   │   │   ├── interpret_day_v1.txt
+    │   │   │   │   ├── keyword_to_thoughts_v1.txt
+    │   │   │   │   ├── memo_on_convo_v1.txt
+    │   │   │   │   ├── new_daily_plan_v1.txt
+    │   │   │   │   ├── new_decomp_schedule_v1.txt
+    │   │   │   │   ├── next_step_scheduling_v2.txt
+    │   │   │   │   ├── next_step_scheduling_v3.txt
+    │   │   │   │   ├── planning_thought_on_convo_v1.txt
+    │   │   │   │   ├── poignancy_chat_v1.txt
+    │   │   │   │   ├── poignancy_event_v1.txt
+    │   │   │   │   ├── poignancy_thought_v1.txt
+    │   │   │   │   ├── summarize_chat_ideas_v1.txt
+    │   │   │   │   ├── summarize_chat_relationship_v1.txt
+    │   │   │   │   ├── summarize_conversation_v1.txt
+    │   │   │   │   ├── summarize_day_v1.txt
+    │   │   │   │   ├── summarize_ideas_v1.txt
+    │   │   │   │   ├── task_decomp_v1.txt
+    │   │   │   │   ├── task_decomp_v2.txt
+    │   │   │   │   ├── task_decomp_v3.txt
+    │   │   │   │   ├── wake_up_hour_v1.txt
+    │   │   │   │   └── whisper_inner_thought_v1.txt
+    │   │   │   └── v3_ChatGPT
+    │   │   │       ├── action_location_object_v1.txt
+    │   │   │       ├── action_location_sector_v2.txt
+    │   │   │       ├── action_object_v2.txt
+    │   │   │       ├── agent_chat_v1.txt
+    │   │   │       ├── bed_hour_v1.txt
+    │   │   │       ├── convo_to_thoughts_v1.txt
+    │   │   │       ├── create_conversation_v1.txt
+    │   │   │       ├── create_conversation_v2.txt
+    │   │   │       ├── daily_planning_v3.txt
+    │   │   │       ├── daily_planning_v4.txt
+    │   │   │       ├── daily_planning_v5.txt
+    │   │   │       ├── daily_planning_v6.txt
+    │   │   │       ├── decide_to_react_v1.txt
+    │   │   │       ├── decide_to_react_v2.txt
+    │   │   │       ├── decide_to_talk_v1.txt
+    │   │   │       ├── decide_to_talk_v2.txt
+    │   │   │       ├── generate_event_triple_v1.txt
+    │   │   │       ├── generate_focal_pt_v1.txt
+    │   │   │       ├── generate_hourly_schedule_v1.txt
+    │   │   │       ├── generate_hourly_schedule_v2.txt
+    │   │   │       ├── generate_next_convo_line_v1.txt
+    │   │   │       ├── generate_obj_event_v1.txt
+    │   │   │       ├── generate_pronunciatio_v1.txt
+    │   │   │       ├── get_keywords_v1.txt
+    │   │   │       ├── insight_and_evidence_v1.txt
+    │   │   │       ├── interpret_day_v1.txt
+    │   │   │       ├── iterative_convo_v1.txt
+    │   │   │       ├── keyword_to_thoughts_v1.txt
+    │   │   │       ├── memo_on_convo_v1.txt
+    │   │   │       ├── new_daily_plan_v1.txt
+    │   │   │       ├── new_decomp_schedule_v1.txt
+    │   │   │       ├── next_step_scheduling_v2.txt
+    │   │   │       ├── next_step_scheduling_v3.txt
+    │   │   │       ├── planning_thought_on_convo_v1.txt
+    │   │   │       ├── poignancy_chat_v1.txt
+    │   │   │       ├── poignancy_event_v1.txt
+    │   │   │       ├── poignancy_thought_v1.txt
+    │   │   │       ├── summarize_chat_ideas_v1.txt
+    │   │   │       ├── summarize_chat_relationship_v1.txt
+    │   │   │       ├── summarize_chat_relationship_v2.txt
+    │   │   │       ├── summarize_conversation_v1.txt
+    │   │   │       ├── summarize_day_v1.txt
+    │   │   │       ├── summarize_ideas_v1.txt
+    │   │   │       ├── task_decomp_v1.txt
+    │   │   │       ├── task_decomp_v2.txt
+    │   │   │       ├── task_decomp_v3.txt
+    │   │   │       ├── wake_up_hour_v1.txt
+    │   │   │       └── whisper_inner_thought_v1.txt
+    │   │   └── __pycache__
+    │   │       ├── persona.cpython-311.pyc
+    │   │       └── persona.cpython-39.pyc
+    │   ├── __pycache__
+    │   │   ├── global_methods.cpython-311.pyc
+    │   │   ├── global_methods.cpython-39.pyc
+    │   │   ├── maze.cpython-311.pyc
+    │   │   ├── maze.cpython-39.pyc
+    │   │   ├── path_finder.cpython-311.pyc
+    │   │   ├── path_finder.cpython-39.pyc
+    │   │   ├── utils.cpython-311.pyc
+    │   │   └── utils.cpython-39.pyc
+    │   ├── reverie.py
+    │   ├── test copy.py
+    │   ├── test.py
+    │   └── utils.py
+    ├── compress_sim_storage.py
+    └── global_methods.py
+
+529 directories, 274 files

@@ -8,6 +8,7 @@ import json
 import random
 import openai
 import time 
+import sys # Import sys to print exception info
 
 from utils import *
 openai.api_key = openai_api_key
@@ -22,19 +23,38 @@ def ChatGPT_request(prompt):
                    the parameter and the values indicating the parameter 
                    values.   
   RETURNS: 
-    a str of GPT-3's response. 
+    a str of GPT-4's response. 
   """
   # temp_sleep()
+  model_name = "gpt-4o-mini"
+  messages = [{"role": "user", "content": prompt}]
+
+  print("--- Sending Request ---")
+  print(f"Model: {model_name}")
+  print(f"Messages: {json.dumps(messages, indent=2)}") # Pretty print the messages
+  print("-----------------------")
+
   try: 
     completion = openai.ChatCompletion.create(
-    model="gpt-3.5-turbo", 
-    messages=[{"role": "user", "content": prompt}]
+      model=model_name, 
+      messages=messages
     )
-    return completion["choices"][0]["message"]["content"]
+    response_content = completion["choices"][0]["message"]["content"]
+    print("--- Received Response ---")
+    print(response_content)
+    print("-------------------------")
+    return response_content
   
-  except: 
-    print ("ChatGPT ERROR")
-    return "ChatGPT ERROR"
+  except Exception as e: # Catch specific exception
+    print(f"--- ChatGPT ERROR ---")
+    print(f"Error Type: {type(e).__name__}")
+    print(f"Error Details: {e}")
+    # Optionally print traceback for more details:
+    # import traceback
+    # print("Traceback:")
+    # traceback.print_exc() 
+    print("---------------------")
+    return f"ChatGPT ERROR: {e}" # Return the error details
 
 prompt = """
 ---
@@ -58,7 +78,7 @@ Maria Lopez: "
 ---
 Output the response to the prompt above in json. The output should be a list of list where the inner lists are in the form of ["<Name>", "<Utterance>"]. Output multiple utterances in ther conversation until the conversation comes to a natural conclusion.
 Example output json:
-{"output": "[["Jane Doe", "Hi!"], ["John Doe", "Hello there!"] ... ]"}
+{"output": "[[\"Jane Doe\", \"Hi!\"], [\"John Doe\", \"Hello there!\"] ... ]"}
 """
 
 print (ChatGPT_request(prompt))
